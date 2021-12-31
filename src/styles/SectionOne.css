@@ -1,0 +1,88 @@
+.section_one{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.arrow{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    height: 500px;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section h1{
+    font-family: DM Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+line-height: 39px;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+color: #1382C7;
+
+}
+section p{
+    font-family: DM Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 26px;
+display: flex;
+align-items: center;
+
+color: #000000;
+}
+section button{
+    height: 45px;
+    width: 274px;
+    margin-bottom: 20px;
+font-family: DM Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 26px;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+    background: #1382C7;
+    border: none;
+border-radius: 5px;
+outline: none;
+
+}
+.section_div_one{
+    width: 1200px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.section_div_one div{
+    max-width: 212px;
+}
+section span{
+    height: 10px;
+    width: 129px;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: #1382C7;
+opacity: 0.2;
+border: 1px solid #1382C7;
+box-sizing: border-box;
+border-radius: 6px;
+}
