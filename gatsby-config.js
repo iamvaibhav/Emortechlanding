@@ -6,5 +6,5 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: ["gatsby-plugin-netlify-cms , gatsby-plugin-styled-components, gatsby-plugin-postcss"]
+  plugins: [`gatsby-plugin-netlify-cms`, `gatsby-plugin-postcss`],
 }
