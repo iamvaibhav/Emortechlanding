@@ -1,5 +1,4 @@
 import React from 'react'
-import '../../styles/SectionOne.css'
 function SectionOne() {
     return (
         <div className='flex flex-col justify-center items-center'>
