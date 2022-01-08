@@ -1,5 +1,4 @@
 import React from 'react'
-import Footer from '../Footer'
 import SectionOne from './SectionOne'
 import SectionThree from './SectionThree'
 import SectionTwo from './SectionTwo'
