@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap');
-main{
+@import url('https://fonts.googleapis.com/css2?family=Festive&display=swap');
+/* main{
     height: 718px;
     width: 100%;
     display: flex;
@@ -10,9 +10,9 @@ main{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-}
+} */
 
-main h1{
+/* main h1{
 font-family: DM Sans;
 font-style: normal;
 font-weight: 400;
@@ -24,9 +24,9 @@ align-items: center;
 text-align: center;
 color: #FFFFFF;
 margin-top: 80px;
-}
+} */
 
-main h2{
+/* main h2{
     font-family: DM Sans;
 font-style: normal;
 font-weight: normal;
@@ -41,6 +41,9 @@ color: #FFFFFF;
 mix-blend-mode: normal;
 opacity: 0.9;
 margin-top: 80px;
-}
+} */
 
 
+body {
+    font-family: "DM Sans";
+  }
