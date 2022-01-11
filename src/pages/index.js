@@ -1,5 +1,5 @@
 import React from 'react'
-import Banner from '../components/Home/Banner'
+import Bannerhome from '../components/Home/Bannerhome'
 import Layout from '../components/Layout'
 import '../styles/Index.css'
 import '../styles/Banner.css'
@@ -9,7 +9,7 @@ function index() {
   return (
     <div>
      <Layout>
-       <Banner />
+       <Bannerhome />
      </Layout>
     </div>
   )

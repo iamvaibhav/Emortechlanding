@@ -1,10 +1,12 @@
 import React from 'react'
+import Banner from '../components/Banner'
 import Layout from '../components/Layout'
 
 function portfolio() {
     return (
        <Layout>
-           <h1>portfolio</h1>
+      
+      <Banner title='Portfolio' img={`./portfolio.png`}/>
        </Layout>
     )
 }

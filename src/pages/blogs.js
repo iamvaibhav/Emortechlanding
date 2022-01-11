@@ -4,9 +4,9 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/Layout"
 import Seo from "../components/seo"
-import Banner from "../components/Blog/Banner"
 import Sectionblog from "../components/Blog/Sectionblog"
-import Post from "../components/Blog/Post"
+import Banner from "../components/Banner"
+import "../styles/banner.css"
 
 const blogs = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -28,51 +28,62 @@ const blogs = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <Banner />
+      <Banner title="blogs" img={`./blog.png`} />
       <Sectionblog />
-      <div className="max-w-[1400px] m-auto">
       <Seo title="All posts" />
-      {posts.map(post => (
-        <Post
-          key={post.fields.slug}
-          title={post.frontmatter.title}
-          date={post.frontmatter.date}
-          description={post.frontmatter.description}
-          excerpt={post.excerpt}
-        />
-      ))}
-      </div> 
-{/* ]        {posts.map(post => {
-          const title = post.frontmatter.title || post.fields.slug
 
+      <div className="max-w-[1400px] m-auto flex justify-start items-center my-100">
+        {posts.map(post => {
+          const title = post.frontmatter.title || post.fields.slug
+          const thumbnail =
+            post.frontmatter.thumbnail.childImageSharp.gatsbyImageData.images
+              .fallback.src
+          console.log(post)
           return (
-              
-            <li key={post.fields.slug}>
-              <article
-                className="post-list-item"
-                itemScope
-                itemType="http://schema.org/Article"
-              >
-                <header>
-                  <h2>
-                    <Link to={post.fields.slug} itemProp="url">
-                      <span itemProp="headline">{title}</span>
-                    </Link>
-                  </h2>
-                  <small>{post.frontmatter.date}</small>
-                </header>
-                <section>
+            <article
+              className="ml-10"
+              itemScope
+              itemType="http://schema.org/Article"
+            >
+              <header className="h-[408px] w-[497px] bg-white shadow-lg rounded-[10px]">
+                <img className="rounded-t-[5px] h-[151px]" src={thumbnail} />
+
+                <section
+                  className="h-[257px] shadow-lg rounded-b-[5px] py-2 px-10"
+                  style={{
+                    background:
+                      "linear-gradient(93.93deg, #26C0D5 -6.86%, #1B8CCC 107.58%, #1B6CCC 107.58%)",
+                  }}
+                >
                   <p
                     dangerouslySetInnerHTML={{
                       __html: post.frontmatter.description || post.excerpt,
                     }}
                     itemProp="description"
+                    className="text-white"
+                  />
+                  <h2 className="text-[24px] leading-[36px] font-bold ">
+                    <Link to={post.fields.slug} itemProp="url">
+                      <span
+                        className="text-[24px] leading-[36px] font-bold "
+                        itemProp="headline"
+                      >
+                        {title}
+                      </span>
+                    </Link>
+                  </h2>
+              
+                  <section
+                    dangerouslySetInnerHTML={{ __html: post.excerpt }}
+                    itemProp="articleBody"
+                    className="py-2"
                   />
                 </section>
-              </article>
-            </li>
+              </header>
+            </article>
           )
-        })} */}
+        })}
+      </div>
     </Layout>
   )
 }
@@ -96,6 +107,11 @@ export const pageQuery = graphql`
           date(formatString: "MMMM DD, YYYY")
           title
           description
+          thumbnail {
+            childImageSharp {
+              gatsbyImageData(layout: FULL_WIDTH)
+            }
+          }
         }
       }
     }

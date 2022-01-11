@@ -1,12 +1,12 @@
 import React from 'react'
+import Banner from '../components/Banner'
 import Layout from '../components/Layout'
 
 function services() {
     return (
     <Layout>
-        <h1>
-            services
-        </h1>
+             <Banner title='Services' img={`./services.png`}/>
+
         </Layout>
     )
 }

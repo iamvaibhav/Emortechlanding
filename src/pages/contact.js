@@ -1,10 +1,11 @@
 import React from 'react'
+import Banner from '../components/Banner'
 import Layout from '../components/Layout'
 
 function contact() {
     return (
         <Layout>
-            <h1>contact</h1>
+      <Banner title='Contact' img={`./contact.png`}/>
         </Layout>
     )
 }

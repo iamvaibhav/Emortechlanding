@@ -10,7 +10,7 @@ collections:
     label: 'Blog'
     folder: 'content/blog'
     create: true
-    slug: 'index'
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     media_folder: ''
     public_folder: ''
     path: '{{title}}/index'
@@ -20,4 +20,5 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }
+      - {label: "Featured Image", name: "thumbnail", widget: "image"}
       - { label: 'Body', name: 'body', widget: 'markdown' }
