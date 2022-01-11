@@ -6,7 +6,7 @@ import Layout from "../components/Layout"
 import Seo from "../components/seo"
 import Sectionblog from "../components/Blog/Sectionblog"
 import Banner from "../components/Banner"
-import "../styles/banner.css"
+import "../styles/Banner.css"
 
 const blogs = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -32,7 +32,7 @@ const blogs = ({ data, location }) => {
       <Sectionblog />
       <Seo title="All posts" />
 
-      <div className="max-w-[1400px] m-auto flex justify-start items-center my-100">
+      <div className="max-w-[1400px] m-auto flex justify-start items-center">
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
           const thumbnail =
