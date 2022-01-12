@@ -5,7 +5,6 @@ import Bio from "../components/bio"
 import Layout from "../components/Layout"
 import Seo from "../components/seo"
 import Banner from "../components/Banner"
-
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -29,7 +28,7 @@ const BlogPostTemplate = ({ data, location }) => {
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
-          className="max-w-[1200px] m-auto text-[20px] leading-[28px] "
+          className="max-w-[1200px] m-auto opacity-[0.8] text-[20px] leading-[28px]  "
         />
         <hr />
         <footer>

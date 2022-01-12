@@ -7,6 +7,8 @@ import Seo from "../components/seo"
 import Sectionblog from "../components/Blog/Sectionblog"
 import Banner from "../components/Banner"
 import "../styles/Banner.css"
+import Newsletter from "../components/Blog/Newsletter"
+
 
 const blogs = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -32,7 +34,7 @@ const blogs = ({ data, location }) => {
       <Sectionblog />
       <Seo title="All posts" />
 
-      <div className="max-w-[1400px] m-auto flex justify-start items-center">
+      <div className="max-w-[1200px] m-auto flex justify-start items-center px-2">
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
           const thumbnail =
@@ -41,7 +43,7 @@ const blogs = ({ data, location }) => {
           console.log(post)
           return (
             <article
-              className="ml-10"
+              className="mr-10"
               itemScope
               itemType="http://schema.org/Article"
             >
@@ -84,6 +86,7 @@ const blogs = ({ data, location }) => {
           )
         })}
       </div>
+      <Newsletter />
     </Layout>
   )
 }
