@@ -30,7 +30,7 @@ const blogs = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <Banner title="blogs" img={`./blog.png`} />
+      <Banner title="blogs" img={`./blog2.png`} />
       <Sectionblog />
       <Seo title="All posts" />
 
