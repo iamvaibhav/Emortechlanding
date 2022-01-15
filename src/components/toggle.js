@@ -6,16 +6,20 @@ export const Toggle = () => {
   const { theme, setTheme } = React.useContext(ThemeContext)
   const [dark , setDark] = useState(false)
   function isDark() {
-    return theme === 'light'
+    return theme === 'dark'
   }
 
   return (
     <>
-      <StaticImage src='../images/theme.png' onClick={()=>{
-          setDark(!dark)
-          setTheme(dark ? 'dark' : 'light')
-          isDark()
-      }} className='mr-[55px]' />
+      <label className="text-primary">
+        <input
+          type="checkbox"
+          checked={isDark()}
+          onChange={e => setTheme(e.target.checked ? 'dark' : 'light')}
+        ></input>
+        Dark Mode
+      </label>
+                 <StaticImage src='../images/theme.png' className='mr-[55px]' />
 
     </>
   )
