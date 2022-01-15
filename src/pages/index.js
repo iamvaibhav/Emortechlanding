@@ -5,11 +5,11 @@ import '../styles/Index.css'
 import '../styles/Banner.css'
 
 
-function index() {
+function index({dark , setDark}) {
   return (
     <div>
      <Layout>
-       <Bannerhome />
+       <Bannerhome dark={dark} setDark={setDark} />
      </Layout>
     </div>
   )

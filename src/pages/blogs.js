@@ -8,6 +8,7 @@ import Sectionblog from "../components/Blog/Sectionblog"
 import Banner from "../components/Banner"
 import "../styles/Banner.css"
 import Newsletter from "../components/Blog/Newsletter"
+import { Toggle } from "../components/toggle"
 
 
 const blogs = ({ data, location }) => {
@@ -34,7 +35,7 @@ const blogs = ({ data, location }) => {
       <Sectionblog />
       <Seo title="All posts" />
 
-      <div className="max-w-[1200px] m-auto flex justify-start items-center px-2">
+      <div className="max-w-[1200px] m-auto bg-secondary flex justify-start items-center px-2">
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
           const thumbnail =

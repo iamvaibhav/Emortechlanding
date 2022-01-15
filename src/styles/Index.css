@@ -14,3 +14,29 @@ html {
 }
 
 
+
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import 'tailwindcss/base';
+ body{
+     background-color: var(--color-bg-secondary);
+ }
+  
+  .dark {
+    --color-bg-primary: #2d3748;
+    --color-bg-secondary: #1a1a1a;
+    --color-bg-blogs: #484848;
+    --color-text-primary: #ffffff;
+    --color-text-secondary: #e2e8f0;
+    --color-text-accent: #81e6d9;
+  }
+  
+  .light {
+    --color-bg-primary: #ffffff;
+    --color-bg-secondary: #ffffff;
+    --color-bg-blogs:#E7E7E7;
+    --color-text-primary: #000000;
+    --color-text-secondary: #4a5568;
+    --color-text-accent: #2b6cb0;
+  }
+  

@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link} from 'gatsby'
 import { StaticImage } from "gatsby-plugin-image"
+import { Toggle } from './toggle'
 
 function Header() {
     return (
@@ -14,7 +15,7 @@ function Header() {
              <Link  className='link'  to='/blogs'>  <li className='mx-10'>Blog</li></Link>
               <Link  className='link'  to='/contact'> <li className='mx-10'>Contact</li></Link>
            </ul>
-           <StaticImage src='../images/theme.png' className='mr-[55px]' />
+           <Toggle />
        </header>
     )
 }

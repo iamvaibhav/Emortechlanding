@@ -8,7 +8,7 @@ function services() {
     return (
     <Layout>
              <Banner title='Services' img={`./services.png`}/>
-             <div className='max-w-[1400px] m-auto flex flex-wrap justify-center items-center'>
+             <div className='text-primary max-w-[1400px] m-auto flex flex-wrap justify-center items-center'>
            <Box title='Artifical Intelligence & Machine Learning' description='Get our intelligent systems technology to work for your business. Drive growth, drive sales, and get closer to what the customer wants.' img={`../services/ai.png`} />
            <Box title='Web Applications' description='Get blazing fast, responsive, highly scalable, and lean information systems allowing millions of users with surprisingly low server usage.' img={`../services/wa.png`} />
            <Box title='Mobile Applications' description='Get blazing fast, responsive, highly scalable, and lean information systems allowing millions of users with surprisingly low server usage.' img={`../services/ma.png`} />

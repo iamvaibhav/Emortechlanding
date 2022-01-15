@@ -15,18 +15,18 @@ function contact() {
         <section className='flex justify-between items-start'>
           <div className='h-[800px] w-[800px]'>
             <form>
-              <input className='h-[40px] w-[600px] border-b-2 border-[#1382C7] mt-10 p-2' placeholder='First Name'  type='text' />
-              <input className='h-[40px] w-[600px] border-b-2 border-[#1382C7] mt-10 p-2' placeholder='Last Name' type='text' />
-              <input className='h-[40px] w-[600px] border-b-2 border-[#1382C7] mt-10 p-2' placeholder='Company Name' type='text' />
-              <p className='mt-5 mb-2'>What type of service are you looking for?</p>
+              <input className='h-[40px] w-[600px] bg-secondary border-b-2 border-[#1382C7] mt-10 p-2' placeholder='First Name'  type='text' />
+              <input className='h-[40px] w-[600px] bg-secondary border-b-2 border-[#1382C7] mt-10 p-2' placeholder='Last Name' type='text' />
+              <input className='h-[40px] w-[600px] bg-secondary border-b-2 border-[#1382C7] mt-10 p-2' placeholder='Company Name' type='text' />
+              <p className='text-primary mt-5 mb-2'>What type of service are you looking for?</p>
               <ul className='max-w-[600px] flex flex-wrap justify-start items-center '>
-                <li className='h-[35px] border-2 border-black mr-2 px-5 flex justify-center items-center text-[18px] leading-[24px] rounded-[10px]'><input className='mr-5' type='radio' /> AI/ML</li>
-                <li className='h-[35px] border-2 border-black mr-2 px-5 flex justify-center items-center text-[18px] leading-[24px] rounded-[10px]'><input className='mr-5' type='radio' /> Android App</li>
-                <li className='h-[35px] border-2 border-black mr-2 px-5 flex justify-center items-center text-[18px] leading-[24px] rounded-[10px]'><input className='mr-5' type='radio' /> Web development</li>
-                <li className='h-[35px] border-2 border-black mt-2 mr-2 px-5 flex justify-center items-center text-[18px] leading-[24px] rounded-[10px]'><input className='mr-5' type='radio' /> UI UX Design</li>
-                <li className='h-[35px] border-2 border-black mt-2 mr-2 px-5 flex justify-center items-center text-[18px] leading-[24px] rounded-[10px]'><input className='mr-5' type='radio' /> AI/ML</li>
+                <li className='h-[35px] text-primary bg-secondary border-2 border-primary mr-2 px-5 flex justify-center items-center text-[18px] leading-[24px] rounded-[10px]'><input className='mr-5' type='radio' /> AI/ML</li>
+                <li className='h-[35px] text-primary bg-seconday border-2 border-primary mr-2 px-5 flex justify-center items-center text-[18px] leading-[24px] rounded-[10px]'><input className='mr-5' type='radio' /> Android App</li>
+                <li className='h-[35px] text-primary bg-secondary border-2 border-primary mr-2 px-5 flex justify-center items-center text-[18px] leading-[24px] rounded-[10px]'><input className='mr-5' type='radio' /> Web development</li>
+                <li className='h-[35px] text-primary bg-secondary border-2 border-primary mt-2 mr-2 px-5 flex justify-center items-center text-[18px] leading-[24px] rounded-[10px]'><input className='mr-5' type='radio' /> UI UX Design</li>
+                <li className='h-[35px] text-primary bg-secondary border-2 border-primary mt-2 mr-2 px-5 flex justify-center items-center text-[18px] leading-[24px] rounded-[10px]'><input className='mr-5' type='radio' /> AI/ML</li>
             </ul>
-            <textarea className='h-[200px] w-[600px] border-2 border-black mt-5'>
+            <textarea className='h-[200px] w-[600px] bg-secondary border-2 border-[#1382C7] mt-5'>
 
             </textarea><br></br>
             <button className='h-[45px] w-[274px] font-bold text-[20px] leading-[26px] border-1 border-[#1382C7] bg-[#1382C7] rounded-[5px] text-white  flex justify-center items-center text-center mt-5'>Submit</button>

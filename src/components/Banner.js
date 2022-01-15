@@ -6,11 +6,11 @@ function Banner({ title, img }) {
     <div>
       {title != "Contact" ? (
         <main
-          className="flex flex-col justify-start items-center h-[480px] w-[100%] bg-cover bg-no-repeat bg-center w-full"
-          style={{ backgroundImage: `url(./bannerblog.png)` }}
+          className="flex flex-col justify-start items-center h-[484px] w-[100%] bg-cover bg-no-repeat bg-center w-full"
+          style={{ backgroundImage: `url(./bannerblog2.png)` }}
         >
           <div
-            className="h-[440px] w-[100%]  bg-cover bg-no-repeat bg-center"
+            className="h-[460px] w-[100%]  bg-cover bg-no-repeat bg-center"
             style={{
               backgroundImage: ` url(${img})`,
             }}
