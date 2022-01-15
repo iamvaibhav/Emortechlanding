@@ -14,6 +14,7 @@ export const Toggle = () => {
       <StaticImage src='../images/theme.png' onClick={()=>{
           setDark(!dark)
           setTheme(dark ? 'dark' : 'light')
+          isDark()
       }} className='mr-[55px]' />
 
     </>
