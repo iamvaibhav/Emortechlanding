@@ -8,6 +8,7 @@ const getInitialTheme = _ => {
     }
 
     const userMedia = window.matchMedia('(prefers-color-scheme: dark)')
+    
     if (userMedia.matches) {
       return 'dark'
     }
@@ -19,7 +20,7 @@ const getInitialTheme = _ => {
 export const ThemeContext = React.createContext()
 
 export const ThemeProvider = ({ initialTheme, children }) => {
-  const [theme, setTheme] = React.useState(getInitialTheme)
+  const [theme, setTheme] = React.useState('light')
 
   const rawSetTheme = theme => {
     const root = window.document.documentElement

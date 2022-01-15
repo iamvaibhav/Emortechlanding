@@ -6,7 +6,7 @@ export const Toggle = () => {
   const { theme, setTheme } = React.useContext(ThemeContext)
   const [dark , setDark] = useState(false)
   function isDark() {
-    return theme === 'dark'
+    return theme === 'light'
   }
 
   return (
