@@ -14,7 +14,7 @@ import { Toggle } from "../components/toggle"
 const blogs = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
-
+  
   if (posts.length === 0) {
     return (
       <Layout location={location} title={siteTitle}>
@@ -35,13 +35,13 @@ const blogs = ({ data, location }) => {
       <Sectionblog />
       <Seo title="All posts" />
 
-      <div className="max-w-[1200px] m-auto bg-secondary flex justify-start items-center px-2">
+      <div className="max-w-[1200px] m-auto flex justify-start items-center px-2">
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
           const thumbnail =
             post.frontmatter.thumbnail.childImageSharp.gatsbyImageData.images
               .fallback.src
-          console.log(post)
+          console.log(thumbnail, post)
           return (
             <article
               className="mr-10"

@@ -19,7 +19,11 @@ export const Toggle = () => {
         ></input>
         Dark Mode
       </label>
-                 <StaticImage src='../images/theme.png' className='mr-[55px]' />
+                 <StaticImage onClick={()=>{
+                   isDark()
+                   setTheme(dark ? 'dark' : 'light') 
+                   setDark(!dark)
+                 }} src='../images/theme.png' className='mr-[55px]' />
 
     </>
   )
