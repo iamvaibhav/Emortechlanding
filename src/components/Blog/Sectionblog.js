@@ -13,7 +13,7 @@ function Sectionblog() {
     },
     {
       id: 3,
-      text: "Productivity",
+      text: "Productivit",
     },
     {
       id: 4,
