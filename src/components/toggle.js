@@ -1,8 +1,9 @@
 import { StaticImage } from 'gatsby-plugin-image'
 import React, { useState } from 'react'
 import { ThemeContext } from './themeContext'
-
-export const Toggle = () => {
+import Toggle from 'react-toggle'
+import "react-toggle/style.css" 
+export const Togglebtn = () => {
   const { theme, setTheme } = React.useContext(ThemeContext)
   const [dark , setDark] = useState(false)
   function isDark() {
@@ -11,15 +12,25 @@ export const Toggle = () => {
 
   return (
     <>
-      <label className="text-primary">
-        <input
-          type="checkbox"
-          checked={isDark()}
-          onChange={e => setTheme(e.target.checked ? 'dark' : 'light')}
-        ></input>
-        Dark Mode
-      </label>
-                 <StaticImage src='../images/theme.png' className='mr-[55px]' />
+            <p className='menuw:hidden text-primary mb-2'>Theme</p>
+
+      <label className='menuw:hidden'>
+  <Toggle    
+     checked={isDark()}
+    onChange={e => setTheme(e.target.checked ? 'dark' : 'light')}
+    icons={{
+      checked:  <StaticImage src='../images/theme.png' />,
+      unchecked: null,
+    }}
+    />
+</label>
+
+                 
+                 <StaticImage onClick={()=>{
+                   isDark()
+                   setTheme(dark ? 'dark' : 'light') 
+                   setDark(!dark)
+                 }} src='../images/theme.png' className='mr-[55px] hidden menuw:block' />
 
     </>
   )
