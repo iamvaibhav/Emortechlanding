@@ -4,9 +4,10 @@
     box-sizing: border-box;
 }
 
-html {
+html , body {
     position: relative;
     min-height: 100%;
+    overflow-x: hidden;
 }
 
 .link{
@@ -40,3 +41,9 @@ html {
     --color-text-accent: #2b6cb0;
   }
   
+  .react-toggle--checked .react-toggle-track {
+    background-color: #a09b9b !important;
+}
+.react-toggle--checked:hover:not(.react-toggle--disabled) .react-toggle-track {
+  background-color: #000000;
+}

@@ -13,49 +13,73 @@ const BlogPostTemplate = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-         <Banner img={`../blogs.png`} />
-
+         <Banner title='' img={`../blogs.png`} />
+      
       <article
-        className="max-w-[1400px] m-auto"
+        className="max-w-[1400px] m-auto text-primary px-2"
         itemScope
         itemType="http://schema.org/Article"
       >
-        <header>
-          <h1 className="text-[28px] leading-[36px] max-w-[1200px] m-auto" itemProp="headline">{post.frontmatter.title}</h1>
-          <p>{post.frontmatter.date}</p>
-          <img src={thumbnail} />
+                    
+        <header>      <p className="py-5"><span className="text-primary opacity-[0.6]">Blog</span>  Artilce View</p>          <p className="capitalize text-primary opacity-[0.6]">{post.frontmatter.description}</p>
+          <h1 className="text-[24px] sml:text-[28px] leading-[36px] max-w-[1200px] py-2" itemProp="headline">{post.frontmatter.title}</h1>
+          <img className="max-h-[400px] w-full" src={thumbnail} />
         </header>
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
-          className="max-w-[1200px] m-auto opacity-[0.8] text-[20px] leading-[28px]  "
+          className="max-w-[1200px] m-auto opacity-[0.8] sml:text-[18px] sm:text-[20px] sm:leading-[28px]  py-2"
         />
         <hr />
         <footer>
         </footer>
       </article>
-      <nav className="blog-post-nav">
-        <ul
-          style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
-            padding: 0,
-          }}
-        >
+      <p className="text-primary text-[24px] sml:text-[28px] text-[#1382C7] mt-10 text-center">More Blogs</p>
+      <nav className="text-primary">
+        <ul className="mt-10 flex flex-wrap justify-around"
+       >
           <li>
             {previous && (
-              <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
-              </Link>
+                <div className="max-w-[400px] mt-5">
+                <img className="h-[140px]" src={ previous.frontmatter.thumbnail.childImageSharp.gatsbyImageData.images
+                .fallback.src} />
+                ← 
+                <p className="sml:text-[18px] mt-2">{previous.frontmatter.title}</p>
+                <section
+                    dangerouslySetInnerHTML={{ __html: previous.excerpt }}
+                    itemProp="articleBody"
+                    className="text-[12px] sml:text-[12px] max-h-[100px] py-2"
+                  />           
+                  <div className="flex justify-between items-center">
+                    <p className="opacity-[0.4]">{previous.frontmatter.readtime}</p>
+                    <Link to={previous.fields.slug} rel="prev">
+                    <p className="sml:text-[18px]">Read More</p>
+                    </Link>
+                  </div>
+
+                       </div>
             )}
           </li>
           <li>
             {next && (
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
-              </Link>
+               <div className="max-w-[400px] mt-5">
+               <img className="h-[140px] w-full" src={ next.frontmatter.thumbnail.childImageSharp.gatsbyImageData.images
+               .fallback.src} />
+               ← 
+               <p className="sml:text-[18px] mt-2">{next.frontmatter.title}</p>
+               <section
+                   dangerouslySetInnerHTML={{ __html: next.excerpt }}
+                   itemProp="articleBody"
+                   className="text-[12px] sml:text-[12px] max-h-[100px] py-2"
+                 />           
+                 <div className="flex justify-between items-center">
+                   <p className="opacity-[0.4]">{next.frontmatter.readtime}</p>
+                   <Link to={next.fields.slug} rel="prev">
+                   <p className="sml:text-[18px]">Read More</p>
+                   </Link>
+                 </div>
+
+                      </div>
             )}
           </li>
         </ul>
@@ -93,19 +117,42 @@ export const pageQuery = graphql`
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {
+      excerpt(pruneLength: 100)
       fields {
         slug
       }
       frontmatter {
         title
+        description
+        readtime
+        thumbnail {
+          childImageSharp {
+            gatsbyImageData(layout: FULL_WIDTH)
+          }
+        }
       }
     }
     next: markdownRemark(id: { eq: $nextPostId }) {
+      excerpt(pruneLength: 100)
       fields {
         slug
       }
       frontmatter {
         title
+        description
+<<<<<<< HEAD
+<<<<<<< HEAD
+        readtime
+=======
+>>>>>>> eeb02de (added responsive style and blog post)
+=======
+        readtime
+>>>>>>> f2c6c1e (add read more blogs)
+        thumbnail {
+          childImageSharp {
+            gatsbyImageData(layout: FULL_WIDTH)
+          }
+        }
       }
     }
   }

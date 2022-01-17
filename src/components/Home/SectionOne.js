@@ -1,47 +1,25 @@
 import React from 'react'
 import { ThemeContext } from '../themeContext'
+import SectiononeBox from './SectiononeBox'
 function SectionOne() {
     const { theme, setTheme } = React.useContext(ThemeContext)
 
     return (
         <div className='flex flex-col justify-center items-center'>
-            <div className='flex flex-col justify-center items-center'> 
+            <div className='animate-bounce hidden sm:flex flex-col justify-center items-center'> 
                 <img src={theme == 'dark' ? './arroww.png' : './arrowb.png'}/>
                 <img src={theme == 'dark' ? './arroww.png' : './arrowb.png'}/>
             </div>
 
-            <section className='h-[500px] my-[80px] flex flex-col justify-between items-center'>
+            <section className='min-h-[500px] my-[80px] flex flex-col justify-between items-center'>
                 <h1 className='font-bold text-[30px] leading=[39px] flex uppercase text-[#1382C7]'>Our Capabilities</h1>
-                 <div className='w-[1200px]  flex justify-between items-center'>
-                    <div className='max-w-[212px]'>
-                        <img src={theme == 'dark' ? './mobilew.png' : './mobileb.png'  }/>
-                         <span className='h-[10px] w-[129px] block my-[20px] bg-[#1382C7] opacity-[0.2] rounded-[6px]'></span>
-                         <p className='font-normal text-[20px] leading-[26px] text-primary'>Mobile Applications</p>
-                    </div>
+                 <div className='w-[300px] py-2 mt-10 sm:w-[1200px] flex flex-col sm:flex-row flex-wrap justify-between items-center'>
+                     <SectiononeBox name='Mobile Applications' img={theme == 'dark' ? './mobilew.png' : './mobileb.png'  } />
+                     <SectiononeBox name='Artificial Intelligence & Machine Learning' img={theme == 'dark' ? './Aiw.png' : './Aib.png'}  />
+                     <SectiononeBox name='Web Development' img={theme == 'dark' ? './webw.png' : './webb.png'}  />
+                     <SectiononeBox name='Internet Of things' img={theme == 'dark' ? './inoftw.png' : './inoftb.png'} />
+                     <SectiononeBox name='UI UX Design' img={theme == 'dark' ? './uiw.png' : './uib.png'} />
 
-                    <div>
-                        <img src={theme == 'dark' ? './Aiw.png' : './Aib.png'} />
-                         <span className='h-[10px] w-[129px] block my-[20px] bg-[#1382C7] opacity-[0.2] rounded-[6px]'></span>
-                         <p className='font-normal max-w-[212px] text-[20px] leading-[26px] text-primary'>Artificial Intelligence & Machine Learning</p>
-                    </div>
-
-                    <div>
-                        <img src={theme == 'dark' ? './webw.png' : './webb.png'} />
-                         <span className='h-[10px] w-[129px] block my-[20px] bg-[#1382C7] opacity-[0.2] rounded-[6px]'></span>
-                         <p className='font-normal text-[20px] leading-[26px] text-primary'>Web Development</p>
-                    </div>
-
-                    <div>
-                        <img src={theme == 'dark' ? './inoftw.png' : './inoftb.png'} />
-                         <span className='h-[10px] w-[129px] block my-[20px] bg-[#1382C7] opacity-[0.2] rounded-[6px]'></span>
-                         <p className='font-normal text-[20px] leading-[26px] text-primary'>Internet Of things</p>
-                    </div>
-
-                    <div>
-                        <img src={theme == 'dark' ? './uiw.png' : './uib.png'} />
-                         <span className='h-[10px] w-[129px] block my-[20px] bg-[#1382C7] opacity-[0.2] rounded-[6px]'></span>
-                         <p className='font-normal text-[20px] leading-[26px] text-primary'>UI UX Design</p>
-                    </div>
 
 
                  </div>

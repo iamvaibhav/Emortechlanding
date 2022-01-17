@@ -23,8 +23,9 @@ module.exports = {
         'secondary': '#1B8CCC',
         'danger': '#1B6CCC',
     }),
-    backgroundImage: {
-      'bn': "url(../bannerimg.png')",
+    screens: {
+      'sml': '300px',
+      'menuw':'890px'
     },
       colors:{
 
