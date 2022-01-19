@@ -1,39 +1,20 @@
 import React, { useState } from "react"
+import textData from "./textData.js";
 
-function Sectionblog() {
+function Sectionblog({name , setName}) {
     const [activeId, setActiveId] = useState(null);
-  const textData = [
-    {
-      id: 1,
-      text: "Web Development",
-    },
-    {
-      id: 2,
-      text: "Mobile Application",
-    },
-    {
-      id: 3,
-      text: "Productivit",
-    },
-    {
-      id: 4,
-      text: "Design",
-    },
-    {
-      id: 5,
-      text: "Engineering",
-    },
-  ]
 
   const activeStyle = {
     background: '#1382C7',
     color: 'white'
   };
 
-  const handleClick = (id)=> ()=> {
+  const handleClick = (id)=> (e)=> {
     const activeElement = textData.find((item)=> item.id === id )
 
     activeElement && setActiveId(id)
+    setName(e.target.innerHTML)
+    console.log(name)
   }
 
   return (
@@ -48,6 +29,7 @@ function Sectionblog() {
             key={id}
             style={id === activeId ? activeStyle : {}}
             onClick={handleClick(id)}
+            value={name}
           >
             {text}
           </li>
