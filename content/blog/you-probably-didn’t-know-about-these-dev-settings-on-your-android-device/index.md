@@ -1,7 +1,7 @@
 ---
 title: You Probably didn’t know about these dev settings on your Android device
 date: 2022-01-11T07:06:20.391Z
-description: web dev
+description: web development
 readtime: 5 mins
 thumbnail: image-4.png
 ---
