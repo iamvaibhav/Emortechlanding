@@ -19,7 +19,6 @@ function SectionOne() {
                      <SectiononeBox name='Web Development' img={theme == 'dark' ? './webw.png' : './webb.png'}  />
                      <SectiononeBox name='Internet Of things' img={theme == 'dark' ? './inoftw.png' : './inoftb.png'} />
                      <SectiononeBox name='UI UX Design' img={theme == 'dark' ? './uiw.png' : './uib.png'} />
-                     <SectiononeBox name='Mobile Applications' img={theme == 'dark' ? './mobilew.png' : './mobileb.png'  } />
 
 
 

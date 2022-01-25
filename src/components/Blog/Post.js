@@ -5,15 +5,15 @@ function Post({key , title , date , description , readtime, thumbnail, link,exce
     return (
        
                <article
-              className="mr-10"
+              className="sm:mr-10"
               itemScope
               itemType="http://schema.org/Article"
             >
-              <header className="h-[408px] w-[497px] bg-white shadow-lg rounded-[10px]">
-                <img className="rounded-t-[5px] h-[151px]" src={thumbnail} />
+              <header className="relative max-h-[420px] max-w-[497px] bg-white shadow-lg rounded-[10px]">
+                <img className="rounded-t-[5px] h-[151px] w-full" src={thumbnail} />
 
                 <section
-                  className="h-[257px] shadow-lg rounded-b-[5px] py-2 px-10"
+                  className="h-[270px] shadow-lg rounded-b-[5px] px-5 py-2 sm:px-10"
                   style={{
                     background:
                       "linear-gradient(93.93deg, #26C0D5 -6.86%, #1B8CCC 107.58%, #1B6CCC 107.58%)",
@@ -26,10 +26,10 @@ function Post({key , title , date , description , readtime, thumbnail, link,exce
                     itemProp="description"
                     className="text-white"
                   />
-                  <h2 className="text-[24px] leading-[36px] font-bold ">
+                  <h2 className="text-[24px] sm:leading-[36px] font-bold ">
                     <Link to={link} itemProp="url">
                       <span
-                        className="text-[24px] leading-[36px] font-bold "
+                        className="text-[16px] sml:text-[24px] sm:leading-[36px] font-bold "
                         itemProp="headline"
                       >
                         {title}
@@ -40,11 +40,12 @@ function Post({key , title , date , description , readtime, thumbnail, link,exce
                   <section
                     dangerouslySetInnerHTML={{ __html: excerpt }}
                     itemProp="articleBody"
-                    className="py-2"
+                    className="text-[12px] sml:text-[18px] max-h-[100px] py-2"
                   />
-                                  <p className='text-white float-right'>{readtime}</p>
+                                  <p className='absolute bottom-0 right-0 pr-2 text-white float-right'>{readtime}</p>
 
                 </section>
+
               </header>
             </article>
           
