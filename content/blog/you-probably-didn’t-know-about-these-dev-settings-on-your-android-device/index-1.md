@@ -1,9 +1,9 @@
 ---
-title: You Probably didn’t know about these dev settings on your Android device
+title: "You Probably didn’t know "
 date: 2022-01-25T09:16:00.448Z
-description: design
+description: web development
 readtime: 5 mins
-thumbnail: image-3-5-.png
+thumbnail: image-4.png
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam, vitae porta eu aenean. Phasellus sit consectetur blandit senectus pharetra sapien est diam. Non nulla eget neque,viverra netus ligula. Quisque partuis, amet. Risus ultrices at urna ultrices commodo amet.
 
