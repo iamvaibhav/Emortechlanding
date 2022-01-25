@@ -1,7 +1,7 @@
 ---
 title: You didnt know dev settings on your Android device
 date: 2022-01-25T10:03:29.328Z
-description: web development
+description: design
 readtime: 5 mins
 thumbnail: image-3-3-.png
 ---

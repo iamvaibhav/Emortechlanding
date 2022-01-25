@@ -9,16 +9,17 @@ import Newsletter from "./Newsletter"
 import { useState } from "react"
 
 const Blog = ({ posts }) => {
-const [name , setName] = useState('')
+const [name , setName] = useState('web development')
   return (
       <>
+      
       <Sectionblog name={name} setName={setName} />
       <Seo title="All posts" />
 
 
-      <div className="max-w-[1200px] m-auto flex justify-start items-center px-2">
-        {posts.map(post => (
-            name != post.frontmatter.description ?
+      <div className="max-w-[500px] sm:max-w-[1200px] m-auto flex flex-wrap justify-center sm:justify-start items-center px-2">
+        {posts.map(post => ( 
+            name.toLowerCase() == post.frontmatter.description ?
           <Post
             title={post.frontmatter.title}
             link={post.fields.slug}
