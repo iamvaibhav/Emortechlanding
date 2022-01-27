@@ -5,7 +5,7 @@ function Post({key , title , date , description , readtime, thumbnail, link,exce
     return (
        
                <article
-              className="sm:mr-10"
+              className="sm:mr-10 mt-10"
               itemScope
               itemType="http://schema.org/Article"
             >

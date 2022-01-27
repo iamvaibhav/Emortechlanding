@@ -6,7 +6,7 @@ function SectionOne() {
 
     return (
         <div className='flex flex-col justify-center items-center'>
-            <div className='hidden sm:flex flex-col justify-center items-center'> 
+            <div className='animate-bounce hidden sm:flex flex-col justify-center items-center'> 
                 <img src={theme == 'dark' ? './arroww.png' : './arrowb.png'}/>
                 <img src={theme == 'dark' ? './arroww.png' : './arrowb.png'}/>
             </div>
