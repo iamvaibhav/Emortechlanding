@@ -46,9 +46,10 @@ function Header() {
        <header className='flex justify-between items-center h-head w-screen bg-gradient-to-r  ' 
        style={{background:"linear-gradient(93.93deg, #26C0D5 -6.86%, #1B8CCC 107.58%, #1B6CCC 107.58%)"}}>
           <StaticImage src='../images/logo.png' className='min-w-[100px] sm:ml-[55px]' />
+        <div className='menuw:hidden'>
           <StaticImage onClick={() => {
              setMenu(!menu)
-          }}  src='../images/menu.png' className='menuw:hidden mr-5'/>
+          }}  src='../images/menu.png' className='block menuw:hidden mr-5'/> </div>
            <ul className=' hidden menuw:flex items-center font-semibold text-black opacity-[0.4] text-[16px] lg:text-[20px]'>
               <Link className='link' to='/'> <li className='mx-10'>Home</li></Link>
              <Link  className='link'  to='/portfolio'>  <li className='mx-10'>Portfolio</li></Link>
