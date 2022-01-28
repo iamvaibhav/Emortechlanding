@@ -24,14 +24,20 @@ export const Togglebtn = () => {
     }}
     />
 </label>
-
+                     
+                     { theme == 'dark' ?
+                 <StaticImage onClick={()=>{
+                   isDark()
+                   setTheme(dark ? 'dark' : 'light') 
+                   setDark(!dark)
+                 }} src='../images/theme2.png' className='mr-[55px] hidden menuw:block' />:
                  
                  <StaticImage onClick={()=>{
                    isDark()
                    setTheme(dark ? 'dark' : 'light') 
                    setDark(!dark)
                  }} src='../images/theme.png' className='mr-[55px] hidden menuw:block' />
-
+                }
     </>
   )
 }

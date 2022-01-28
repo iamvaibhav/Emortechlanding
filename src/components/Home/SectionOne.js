@@ -6,12 +6,12 @@ function SectionOne() {
 
     return (
         <div className='flex flex-col justify-center items-center'>
-            <div className='animate-bounce hidden sm:flex flex-col justify-center items-center'> 
+           <a href='#section'> <div className='animate-bounce hidden sm:flex flex-col justify-center items-center'> 
                 <img src={theme == 'dark' ? './arroww.png' : './arrowb.png'}/>
                 <img src={theme == 'dark' ? './arroww.png' : './arrowb.png'}/>
-            </div>
+            </div></a>
 
-            <section className='min-h-[500px] my-[80px] flex flex-col justify-between items-center'>
+            <section id='section' className='min-h-[500px] my-[80px] flex flex-col justify-between items-center'>
                 <h1 className='font-bold text-[30px] leading=[39px] flex uppercase text-[#1382C7]'>Our Capabilities</h1>
                  <div className='w-[300px] py-2 mt-10 sm:w-[1200px] flex flex-col sm:flex-row flex-wrap justify-between items-center'>
                      <SectiononeBox name='Mobile Applications' img={theme == 'dark' ? './mobilew.png' : './mobileb.png'  } />
