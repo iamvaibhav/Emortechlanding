@@ -16,15 +16,7 @@ function Banner({ title, img }) {
             bg-cover bg-no-repeat bg-center`}
       
           >
-<<<<<<< HEAD
-<<<<<<< HEAD
             <h1 className="h-[460px] font-bold text-white text-[42px] sm:text-[114px] sm:leading-[148px] flex justify-around items-center uppercase sm:py-20">
-=======
-            <h1 className="font-bold text-white text-[42px] sm:text-[114px] sm:leading-[148px] absolute bottom-5 left-[50%] right-[50%] sm:flex justify-center items-center uppercase sm:py-20">
->>>>>>> eeb02de (added responsive style and blog post)
-=======
-            <h1 className="h-[460px] font-bold text-white text-[42px] sm:text-[114px] sm:leading-[148px] flex justify-around items-center uppercase sm:py-20">
->>>>>>> f2c6c1e (add read more blogs)
               {title}
             </h1>
           </div>

@@ -23,15 +23,6 @@ module.exports = {
         'secondary': '#1B8CCC',
         'danger': '#1B6CCC',
     }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    backgroundImage: theme => ({
-      'hero': "url('./images/logo.png')"
-    }),
->>>>>>> eeb02de (added responsive style and blog post)
-=======
->>>>>>> 2f6713f (add menu icon)
     screens: {
       'sml': '300px',
       'menuw':'890px'

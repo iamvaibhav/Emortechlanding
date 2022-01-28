@@ -17,15 +17,7 @@ const [name , setName] = useState('web development')
       <Seo title="All posts" />
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
       <div className="max-w-[500px] sm:max-w-[1200px] m-auto flex flex-wrap justify-center sm:justify-start items-center px-2">
-=======
-      <div className="max-w-[500px] sm:max-w-[1200px] m-auto flex justify-center sm:justify-start items-center px-2">
->>>>>>> eeb02de (added responsive style and blog post)
-=======
-      <div className="max-w-[500px] sm:max-w-[1200px] m-auto flex flex-wrap justify-center sm:justify-start items-center px-2">
->>>>>>> f2c6c1e (add read more blogs)
         {posts.map(post => ( 
             name.toLowerCase() == post.frontmatter.description ?
           <Post

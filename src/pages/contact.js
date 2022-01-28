@@ -14,7 +14,9 @@ function contact() {
 
         <section className='flex flex-wrap-reverse justify-center lg:justify-between items-center'>
           <div className='flex flex-col sm:justify-center items-center min-h-[800px] w-[100%] sm:w-[800px]'>
-            <form className='max-w-[300px] w-[90%] sm:max-w-[600px]'>
+          
+                <form className='max-w-[300px] w-[90%] sm:max-w-[600px]' name="Contact Form" method="POST" data-netlify="true" onSubmit='submit'>
+      <input type="hidden" name="form-name" value="Contact Form" />
               <input className='h-[40px] w-[90%] sm:w-[600px] bg-secondary border-b-2 border-[#1382C7] mt-10 p-2' placeholder='First Name'  type='text' />
               <input className='h-[40px] w-[90%] sm:w-[600px] bg-secondary border-b-2 border-[#1382C7] mt-10 p-2' placeholder='Last Name' type='text' />
               <input className='h-[40px] w-[90%] sm:w-[600px] bg-secondary border-b-2 border-[#1382C7] mt-10 p-2' placeholder='Company Name' type='text' />
@@ -29,7 +31,7 @@ function contact() {
             <textarea className='h-[200px] w-full bg-secondary border-2 border-[#1382C7] mt-5'>
 
             </textarea><br></br>
-            <button className='h-[45px] w-[200px] sml:w-[274px] font-bold text-[20px] leading-[26px] border-1 border-[#1382C7] bg-[#1382C7] rounded-[5px] text-white  flex justify-center items-center text-center mt-5'>Submit</button>
+            <button type='submit' className='h-[45px] w-[200px] sml:w-[274px] font-bold text-[20px] leading-[26px] border-1 border-[#1382C7] bg-[#1382C7] rounded-[5px] text-white  flex justify-center items-center text-center mt-5'>Submit</button>
             </form>
           </div>
           <div>
