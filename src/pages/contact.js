@@ -31,7 +31,8 @@ function contact() {
             <textarea className='h-[200px] w-full bg-secondary border-2 border-[#1382C7] mt-5'>
 
             </textarea><br></br>
-            <button type='submit' className='h-[45px] w-[200px] sml:w-[274px] font-bold text-[20px] leading-[26px] border-1 border-[#1382C7] bg-[#1382C7] rounded-[5px] text-white  flex justify-center items-center text-center mt-5'>Submit</button>
+            <button type='submit'>
+              <p  className='h-[45px] w-[200px] sml:w-[274px] font-bold text-[20px] leading-[26px] border-1 border-[#1382C7] bg-[#1382C7] rounded-[5px] text-white  flex justify-center items-center text-center mt-5'>Submit</p></button>
             </form>
           </div>
           <div>
