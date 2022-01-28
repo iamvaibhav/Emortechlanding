@@ -6,7 +6,7 @@ function SectionThree() {
       <h1 className="font-normal text-[30px] leading-[39px] text-center text-[#1382C7]">
         <span className="text-primary">Dont believe us?</span> See what our clients say
       </h1>
-      <section className="w-[1000px] text-primary flex justify-between items-center">
+      <section className="sm:max-w-[1000px] mt-5 text-primary flex flex-wrap justify-center sm:justify-between items-center">
         <div>
           <h2 className="w-[345px] font-normal text-[24px] leading-[36px]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa eu,
