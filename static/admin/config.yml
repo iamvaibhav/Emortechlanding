@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: deploy # Branch to update (optional; defaults to master)
+  branch: main # Branch to update (optional; defaults to master)
   squash_merges: true
 media_folder: static/img
 public_folder: /img
