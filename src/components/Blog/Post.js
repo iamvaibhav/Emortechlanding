@@ -9,7 +9,7 @@ function Post({key , title , date , description , readtime, thumbnail, link,exce
               itemScope
               itemType="http://schema.org/Article"
             >
-              <header className="relative max-h-[420px] max-w-[497px] bg-white shadow-lg rounded-[10px]">
+              <header className="relative max-h-[420px] max-w-[497px] sm:min-w-[497px] bg-white shadow-lg rounded-[10px]">
                 <img className="rounded-t-[5px] h-[151px] w-full" src={thumbnail} />
 
                 <section

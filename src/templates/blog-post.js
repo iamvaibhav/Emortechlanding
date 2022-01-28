@@ -140,14 +140,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         description
-<<<<<<< HEAD
-<<<<<<< HEAD
         readtime
-=======
->>>>>>> eeb02de (added responsive style and blog post)
-=======
-        readtime
->>>>>>> f2c6c1e (add read more blogs)
         thumbnail {
           childImageSharp {
             gatsbyImageData(layout: FULL_WIDTH)
