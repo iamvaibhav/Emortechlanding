@@ -19,7 +19,7 @@ function SectionThree() {
     
     
     ]
-    
+
   const [current, setCurrent] = useState(0)
   const ref = useRef(null)
   const TOTAL_SLIDES = data.length -1
@@ -68,17 +68,18 @@ function SectionThree() {
         </div>
       </div>
       <div className='w-[500px] flex justify-between items-center'>
-      <div className='w-[100px] p-5 m-5' onClick={prev}><img className="w-[20px]" src="./left.png" /></div>
+      <div className='bg-white flex justify-center items-center rounded-[100%] h-[100px] w-[100px] p-5 m-5' onClick={prev}><img className="w-[20px]" src="./left.png" /></div>
 
         {data.map(num => (
           <div
-            className='h-[15px] w-[15px] rounded-[15px] bg-[#E0E0E0] m-2'
-            onClick={desired}
+          className={`button-2 ${num === current && 'active'}`}
+          onClick={desired}     
             id={num}
             key={num}
           />
         ))}
-                <div className='w-[100px] p-5 m-10' onClick={next}><img className="w-[20px]" src="./right.png" /></div>
+                <div className='bg-white flex justify-center items-center rounded-[100%] h-[100px] w-[100px] p-5 m-10' onClick={next}><img className="w-[20px]" src="./right.png" /></div>
+
 
       </div>
     </div>

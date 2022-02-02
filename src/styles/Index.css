@@ -47,3 +47,16 @@ html , body {
 .react-toggle--checked:hover:not(.react-toggle--disabled) .react-toggle-track {
   background-color: #000000;
 }
+
+.button-2 {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  background: #E0E0E0;
+  margin: 6px;
+  cursor: pointer;
+}
+
+.active {
+  background: #999;
+}
