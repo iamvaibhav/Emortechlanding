@@ -2,17 +2,27 @@ import React, { useState } from 'react'
 import {Link} from 'gatsby'
 import { StaticImage } from "gatsby-plugin-image"
 import { Toggle, Togglebtn } from './toggle'
+import { ThemeContext } from './themeContext'
 function Header() {
 
    const [menu , setMenu] = useState(false)
+   const { theme, setTheme } = React.useContext(ThemeContext)
 
     return (
        <>
        {menu ? 
        <div>
-       <StaticImage onClick={() => {
-          setMenu(!menu)
-       }} src='../images/close.png' className='float-right mr-5' />
+          {theme == 'dark' ?
+             <StaticImage onClick={() => {
+               setMenu(!menu)
+            }} src='../images/close2.png' className='float-right mr-5' />
+            :
+              <StaticImage onClick={() => {
+               setMenu(!menu)
+            }} src='../images/close.png' className='float-right mr-5' />
+           }
+          
+    
           <div className='menuw:hidden h-screen w-screen bg-secondary flex flex-col justify-start items-center'>
        <ul className='flex flex-col items-center font-semibold text-primary opacity-[0.4] text-[20px]'>
               <Link className='link' to='/'> <li  onClick={() => {
@@ -35,7 +45,7 @@ function Header() {
           setMenu(!menu)
        }} className='mx-10 my-10'>Chat with us</li></Link>
             
-            <li className='mx-10 my-10'>
+            <li className='mx-10 my-10 flex flex-col justify-center items-center'>
             <Togglebtn />
             </li>
 
