@@ -19,11 +19,7 @@ function SectionThree() {
     
     
     ]
-    
-    const activeStyle = {
-      background: '#999',
-      color: 'white'
-    };
+
   const [current, setCurrent] = useState(0)
   const ref = useRef(null)
   const TOTAL_SLIDES = data.length -1
@@ -77,12 +73,13 @@ function SectionThree() {
         {data.map(num => (
           <div
           className={`button-2 ${num === current && 'active'}`}
-          onClick={desired}
+          onClick={desired}     
             id={num}
             key={num}
           />
         ))}
                 <div className='bg-white flex justify-center items-center rounded-[100%] h-[100px] w-[100px] p-5 m-10' onClick={next}><img className="w-[20px]" src="./right.png" /></div>
+
 
       </div>
     </div>
