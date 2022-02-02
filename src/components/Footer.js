@@ -1,9 +1,12 @@
 import { StaticImage } from 'gatsby-plugin-image'
-import React from 'react'
+import React, { useState } from 'react'
 
 function Footer() {
+
+    const [chat , setChat] = useState(false)
     return (
-     <footer className='min-h-[414px] w-[fullw] flex flex-wrap justify-around items-start mt-10 bg-[#2E2E2E]'>
+     <footer>
+         <div className='min-h-[414px] w-[fullw] flex flex-wrap justify-around items-start mt-10 bg-[#2E2E2E]'>
          <div className='mt-[80px] text-white w-full sm:w-auto flex flex-col justify-start items-center'>
          <div className='bg-white flex justify-center items-center h-[76px] mt-[-15px] w-[160px] rounded-[10px]'>
          <StaticImage src='../images/logo.png'  />
@@ -41,7 +44,13 @@ function Footer() {
                  <li>UI/UX Design</li>
              </ul>
          </div>
-         <StaticImage class='absolute bottom-0 right-0' src='../images/chatbot.png' />
+         </div>
+         
+         {chat ?
+         <div className='bg-[#999] rounded-[5px] h-[500px] w-[90%]  sm:w-[400px] absolute bottom-20 right-2'>
+
+         </div>  : null }
+         <StaticImage onClick={() => setChat(!chat)} class='absolute bottom-0 right-0' src='../images/chatbot.png' />
      </footer>
     )
 }
