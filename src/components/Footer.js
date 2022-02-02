@@ -41,6 +41,7 @@ function Footer() {
                  <li>UI/UX Design</li>
              </ul>
          </div>
+         <StaticImage class='absolute bottom-0 right-0' src='../images/chatbot.png' />
      </footer>
     )
 }
