@@ -13,7 +13,7 @@ function SectionOne() {
 
             <section id='section' className='min-h-[500px] my-[80px] flex flex-col justify-between items-center'>
                 <h1 className='font-bold text-[30px] leading=[39px] flex uppercase text-[#1382C7]'>Our Capabilities</h1>
-                 <div className='w-[300px] py-2 mt-10 sm:w-[1200px] flex flex-col sm:flex-row flex-wrap justify-between items-center'>
+                 <div className='w-[300px] py-2 mt-10 lg:w-[1200px] flex flex-col sm:flex-row flex-wrap justify-between items-center'>
                      <SectiononeBox name='Mobile Applications' img={theme == 'dark' ? './mobilew.png' : './mobileb.png'  } />
                      <SectiononeBox name='Artificial Intelligence & Machine Learning' img={theme == 'dark' ? './Aiw.png' : './Aib.png'}  />
                      <SectiononeBox name='Web Development' img={theme == 'dark' ? './webw.png' : './webb.png'}  />
