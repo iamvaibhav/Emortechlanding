@@ -28,7 +28,7 @@ function contact() {
                 <li name='interest' className='h-[35px] mt-2 text-primary bg-secondary border-2 border-primary mt-2 mr-2 px-5 flex justify-center items-center text-[12px] sml:text-[18px] leading-[24px] rounded-[10px]'><input className='mr-5' type='radio' /> UI UX Design</li>
                 <li name='interest' className='h-[35px] mt-2 text-primary bg-secondary border-2 border-primary mt-2 mr-2 px-5 flex justify-center items-center text-[12px] sml:text-[18px] leading-[24px] rounded-[10px]'><input className='mr-5' type='radio' /> AI/ML</li>
             </ul>
-            <textarea name='info' className='h-[200px] w-full bg-secondary border-2 border-[#1382C7] mt-5'>
+            <textarea name='info' className='h-[200px] w-full text-primary bg-secondary border-2 border-[#1382C7] mt-5'>
 
             </textarea><br></br>
             <button type='submit'>
