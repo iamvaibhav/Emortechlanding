@@ -3,7 +3,7 @@ import {Link} from 'gatsby'
 import { StaticImage } from "gatsby-plugin-image"
 import { Toggle, Togglebtn } from './toggle'
 import { ThemeContext } from './themeContext'
-function Header() {
+function Header({chat , setChat}) {
 
    const [menu , setMenu] = useState(false)
    const { theme, setTheme } = React.useContext(ThemeContext)
@@ -41,9 +41,10 @@ function Header() {
           setMenu(!menu)
        }} className='mx-10 my-10'>Contact</li></Link>
             
-            <Link  className='link'  to='/contact'> <li  onClick={() => {
+            <a  className='link' href='#chat'> <li  onClick={() => {
           setMenu(!menu)
-       }} className='mx-10 my-10'>Chat with us</li></Link>
+          setChat(!chat)
+       }} className='mx-10 my-10'>Chat with us</li></a>
             
             <li className='mx-10 my-10 flex flex-col justify-center items-center'>
             <Togglebtn />

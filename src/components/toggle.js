@@ -5,7 +5,7 @@ import Toggle from 'react-toggle'
 import "react-toggle/style.css" 
 export const Togglebtn = () => {
   const { theme, setTheme } = React.useContext(ThemeContext)
-  const [dark , setDark] = useState(false)
+  const [dark , setDark] = useState(true)
   function isDark() {
     return theme === 'dark'
   }

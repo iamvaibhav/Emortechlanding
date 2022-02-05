@@ -46,17 +46,17 @@ function SectionThree() {
       <h1 className="font-normal text-[30px] leading-[39px] text-center text-[#1382C7]">
         <span className="text-primary">Dont believe us?</span> See what our clients say
       </h1>
-      <section className="sm:max-w-[1000px] mt-5 text-primary flex flex-wrap justify-center sm:justify-between items-center">
-      <div className='w-full flex flex-col justify-center items-center'>
-      <div className='sm:max-w-[500px] m-auto overflow-hidden'>
-        <div className='flex' ref={ref}>
+      <section className="w-[100%] sm:max-w-[1000px] mt-5 text-primary flex flex-wrap justify-center sm:justify-between items-center">
+      <div className='w-[100%] flex flex-col justify-center items-center'>
+      <div className='sm:max-w-[600px] m-auto overflow-hidden'>
+        <div className='min-h-[200px] max-w-[500px] w-[500px] min-w-[250px] pl-2 flex ' ref={ref}>
         {data.map(({ quote , name , company  }) => {
         return (
           <div>
-          <h2 className="w-[500px] font-normal text-[24px] leading-[36px]">
+          <h2 className="w-[100%] sml:min-w-[400px] sm:w-[500px] font-normal text-[18px] sm:text-[24px] leading-[36px]">
            {quote}
           </h2>
-          <div className="float-right">
+          <div className="float-right pr-5">
             <p className="m-2">{name}</p>
             <p className="m-2">{company}</p>
           </div>
