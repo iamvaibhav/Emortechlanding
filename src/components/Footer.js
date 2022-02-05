@@ -51,6 +51,7 @@ function Footer() {
 
          </div>  : null }
          <StaticImage onClick={() => setChat(!chat)} className='absolute bottom-0 right-0' src='../images/chatbot.png' />
+      
      </footer>
     )
 }
