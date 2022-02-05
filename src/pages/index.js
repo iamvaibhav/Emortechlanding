@@ -7,11 +7,9 @@ import '../styles/Banner.css'
 
 function index() {
   return (
-    <div>
      <Layout>
        <Bannerhome  />
      </Layout>
-    </div>
   )
 }
 
