@@ -48,8 +48,8 @@ function SectionThree() {
       </h1>
       <section className="w-[100%] sm:max-w-[1000px] mt-5 text-primary flex flex-wrap justify-center sm:justify-between items-center">
       <div className='w-[100%] flex flex-col justify-center items-center'>
-      <div className='sm:max-w-[500px] m-auto overflow-hidden'>
-        <div className='w-[400px] pl-2 flex ' ref={ref}>
+      <div className='sm:max-w-[600px] m-auto overflow-hidden'>
+        <div className='min-h-[200px] max-w-[500px] w-[500px] min-w-[250px] pl-2 flex ' ref={ref}>
         {data.map(({ quote , name , company  }) => {
         return (
           <div>
