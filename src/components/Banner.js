@@ -31,7 +31,6 @@ function Banner({ title, img }) {
          
           >
             <h1 className="font-bold text-white text-[114px] leading-[148px] flex justify-center items-center uppercase py-20">
-              {title}
             </h1>
           </div>
         </main>
