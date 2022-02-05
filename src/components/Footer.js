@@ -50,7 +50,9 @@ function Footer() {
          <div className='bg-[#999] rounded-[5px] h-[500px] w-[90%]  sm:w-[400px] absolute bottom-20 right-2'>
 
          </div>  : null }
-         <StaticImage onClick={() => setChat(!chat)} className='absolute bottom-0 right-0' src='../images/chatbot.png' />
+         <div className='absolute bottom-0 right-0'>
+         <StaticImage onClick={() => setChat(!chat)}  src='../images/chatbot.png' />
+         </div>
      </footer>
     )
 }
