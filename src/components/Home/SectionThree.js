@@ -46,19 +46,19 @@ function SectionThree() {
       <h1 className="font-normal text-[30px] leading-[39px] text-center text-[#1382C7]">
         <span className="text-primary">Dont believe us?</span> See what our clients say
       </h1>
-      <section className="w-[100%] sm:max-w-[1000px] mt-5 text-primary flex flex-wrap justify-center sm:justify-between items-center">
+      <section className="w-full sm:max-w-[1000px] mt-5 text-primary flex flex-wrap justify-center sm:justify-between items-center">
       <div className='w-[100%] flex flex-col justify-center items-center'>
-      <div className='sm:max-w-[600px] m-auto overflow-hidden'>
-        <div className='min-h-[200px] max-w-[500px] w-[500px] min-w-[250px] pl-2 flex ' ref={ref}>
+      <div className='sm:w-[600px] min-w-full w-full sml:w-[400px] m-auto overflow-hidden'>
+        <div className='min-h-[200px] relative min-w-full w-full sm:max-w-[500px] sm:w-[500px] flex ' ref={ref}>
         {data.map(({ quote , name , company  }) => {
         return (
-          <div>
-          <h2 className="w-[100%] sml:min-w-[400px] sm:w-[500px] font-normal text-[18px] sm:text-[24px] leading-[36px]">
+          <div className="w-[100%] max-w-[500px] min-w-full sm:w-[500px] m-auto flex flex-col justify-center items-center ">
+          <h2 className="w-[100%] min-w-full sm:min-w-[80%] max-w-500px  sml:w-[400px] px-5 sml:px-2 m-auto sm:w-[500px] font-normal text-[18px] sm:text-[24px] leading-[36px]">
            {quote}
           </h2>
-          <div className="float-right pr-5">
-            <p className="m-2">{name}</p>
-            <p className="m-2">{company}</p>
+          <div className="float-right">
+            <p className="mt-2">{name}</p>
+            <p className="mt-2">{company}</p>
           </div>
         </div>
         );
@@ -66,9 +66,9 @@ function SectionThree() {
         
 
         </div>
-      </div>
-      <div className='w-[500px] flex justify-between items-center'>
-      <div className='bg-white flex justify-center items-center rounded-[100%] h-[100px] w-[100px] p-5 m-5' onClick={prev}><img className="w-[20px]" src="./left.png" /></div>
+      </div> 
+      <div className='w-full min-w-full sm:min-w-[80%] sm:w-[500px] flex justify-between items-center'>
+      <div className='bg-white flex justify-center items-center h-[50px] w-[50px] rounded-[100%] p-5 m-5' onClick={prev}><img className="min-w-[30px] w-[50px]" src="./left.png" /></div>
 
         {data.map(num => (
           <div
@@ -78,7 +78,7 @@ function SectionThree() {
             key={num}
           />
         ))}
-                <div className='bg-white flex justify-center items-center rounded-[100%] h-[100px] w-[100px] p-5 m-10' onClick={next}><img className="w-[20px]" src="./right.png" /></div>
+                <div className='bg-white flex justify-center items-center h-[50px] w-[50px] rounded-[100%] p-5 m-10' onClick={next}><img className="min-w-[30px] w-[50px]" src="./right.png" /></div>
 
 
       </div>

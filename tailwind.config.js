@@ -25,6 +25,7 @@ module.exports = {
     }),
     screens: {
       'sml': '300px',
+      'bsm':'400px',
       'menuw':'890px'
     },
       colors:{
