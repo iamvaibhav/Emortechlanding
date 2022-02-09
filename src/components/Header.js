@@ -23,7 +23,7 @@ function Header({chat , setChat}) {
            }
           
     
-          <div className='menuw:hidden h-screen w-screen bg-secondary flex flex-col justify-start items-center'>
+          <div className='visible menuw:hidden h-screen w-screen bg-secondary flex flex-col justify-start items-center'>
        <ul className='flex flex-col items-center font-semibold text-primary opacity-[0.4] text-[20px]'>
               <Link className='link' to='/'> <li  onClick={() => {
           setMenu(!menu)
@@ -57,7 +57,7 @@ function Header({chat , setChat}) {
        <header className='flex justify-between items-center h-head w-screen bg-gradient-to-r  ' 
        style={{background:"linear-gradient(93.93deg, #26C0D5 -6.86%, #1B8CCC 107.58%, #1B6CCC 107.58%)"}}>
           <StaticImage src='../images/logo.png' className='min-w-[100px] sm:ml-[55px]' />
-        <div className='menuw:hidden'>
+        <div className='visible menuw:hidden'>
           <StaticImage onClick={() => {
              setMenu(!menu)
           }}  src='../images/menu.png' className='block menuw:hidden mr-5'/> </div>
