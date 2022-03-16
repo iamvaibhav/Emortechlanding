@@ -3,6 +3,7 @@ import {Link} from 'gatsby'
 import { StaticImage } from "gatsby-plugin-image"
 import { Toggle, Togglebtn } from './toggle'
 import { ThemeContext } from './themeContext'
+import logo from '../images/logo.png'
 function Header({chat , setChat}) {
 
    const [menu , setMenu] = useState(false)
@@ -55,8 +56,8 @@ function Header({chat , setChat}) {
        </div>
       : null}
        <header className='flex justify-between items-center h-head w-screen bg-gradient-to-r  ' 
-       style={{background:"linear-gradient(93.93deg, #26C0D5 -6.86%, #1B8CCC 107.58%, #1B6CCC 107.58%)"}}>
-          <StaticImage src='../images/logo.png' className='min-w-[100px] sm:ml-[55px]' />
+       style={{background: "linear-gradient(93.93deg, #26C0D5 -6.86%, #1B8CCC 107.58%, #1B6CCC 107.58%)"}}>
+          <img src={logo} className='min-w-[100px] sm:ml-[55px]' />
         <div className='visible menuw:hidden'>
           <StaticImage onClick={() => {
              setMenu(!menu)

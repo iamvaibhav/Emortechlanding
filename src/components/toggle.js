@@ -3,6 +3,9 @@ import React, { useState } from 'react'
 import { ThemeContext } from './themeContext'
 import Toggle from 'react-toggle'
 import "react-toggle/style.css" 
+import theme2 from '../images/theme2.png'
+import themew from '../images/theme.png'
+
 export const Togglebtn = () => {
   const { theme, setTheme } = React.useContext(ThemeContext)
   const [dark , setDark] = useState(true)
@@ -26,17 +29,17 @@ export const Togglebtn = () => {
 </label>
                      
                      { theme == 'dark' ?
-                 <StaticImage onClick={()=>{
+                 <img onClick={()=>{
                    isDark()
                    setTheme(dark ? 'dark' : 'light') 
                    setDark(!dark)
-                 }} src='../images/theme2.png' className='mr-[55px] hidden menuw:block' />:
+                 }} src={theme2} className='mr-[55px] hidden menuw:block' />:
                  
-                 <StaticImage onClick={()=>{
+                 <img onClick={()=>{
                    isDark()
                    setTheme(dark ? 'dark' : 'light') 
                    setDark(!dark)
-                 }} src='../images/theme.png' className='mr-[55px] hidden menuw:block' />
+                 }} src={themew} className='mr-[55px] hidden menuw:block' />
                 }
     </>
   )

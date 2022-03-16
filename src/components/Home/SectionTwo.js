@@ -2,7 +2,7 @@ import React from 'react'
 
 function SectionTwo() {
     return (
-        <div className='min-h-[934px] w-full mb-[20px] flex flex-col justify-around items-center bg-[#2E2E2E]'>
+        <div className='min-h-[934px] w-full mb-[20px] flex flex-col justify-around items-center bg-[#2E2E2E] bg-no-repeat bg-left-bottom	' style={{ backgroundImage:`url(./blue.png)` }}>
             
                 <h1 className='font-bold  text-[30px]  text-[#1382C7] leading-[39px] text-center uppercase'>Why Us?...</h1>
                 <p className='font-normal text-[18px] leading-[30px] sm:text-[24px] sm:leading-[36px] text-center max-w-[965px] text-white'>We are a company with young minds completely enthusiastic to help you solve your problems. We believe in working with atmost efficiency to make sure that we provide you with nothing but the best service!</p>
